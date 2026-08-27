@@ -9,4 +9,7 @@ A TP5110 board can be set to turn on a PICO (the period is determined by an onbo
 
 I found that when the TP5110 was connected to the PICO I was damaging it when programming the PICO. A diode 1N5817 / 1N5819 / SS14 connected between the DRV pin and the VBUS or VSYS on the PICO stops the back feeding of the 5V to the TP5110. Also putting a 4.7 kΩ between the GPIO and DONE pin prevents too high a current flowing.
 
-This works with the TP5110 drawing only a few nA (not measurable) and the PICO and LED at about 200 mA. As is every time the TP5110 activates the LED lights up for about 1s and turns off. This wastes power and does not look good. If I put a NPN transistor in the path of the LED to GND I can stop this. I used a BC337 with 100k pulldown resistor and a 10k resistor to GPIO 10.
+This works with the TP5110 drawing only a few nA (not measurable) and the PICO and LED at about 200 mA. As is every time the TP5110 activates the LED lights up for about 1s and turns off. This wastes power and does not look good. If I put a NPN transistor in the path of the LED to GND I can stop this. I used a BC337 with 100k pulldown resistor and a 10k resistor to GPIO 11.
+
+<img width="1023" height="559" alt="image" src="https://github.com/user-attachments/assets/65638415-d02d-443e-9c56-bab5a3dce306" />
+

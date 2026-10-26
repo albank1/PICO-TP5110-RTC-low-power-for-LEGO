@@ -13,3 +13,5 @@ This works with the TP5110 drawing only a few nA (not measurable) and the PICO a
 
 <img width="1023" height="559" alt="image" src="https://github.com/user-attachments/assets/65638415-d02d-443e-9c56-bab5a3dce306" />
 
+I have had issues with this locking up. After a couple of days after removing the power it works again. It might be that the charging circuit on the RTC is trying to charge the CR2032 battery. I have removed the 201 resistor on the RTC (see red box)
+<img width="283" height="165" alt="image" src="https://github.com/user-attachments/assets/9db46d00-58e1-4b6c-8988-7e9ab6c5487f" />

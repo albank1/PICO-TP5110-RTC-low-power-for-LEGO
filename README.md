@@ -15,3 +15,6 @@ This works with the TP5110 drawing only a few nA (not measurable) and the PICO a
 
 I have had issues with this locking up. After a couple of days after removing the power it works again. It might be that the charging circuit on the RTC is trying to charge the CR2032 battery. I have removed the 201 resistor on the RTC (see red box)
 <img width="283" height="165" alt="image" src="https://github.com/user-attachments/assets/9db46d00-58e1-4b6c-8988-7e9ab6c5487f" />
+
+The battery setup uses a 4x 18650 battery holder connected to a TP4056 charging breakout board. The output of this is connected to a USB A female breakout board. To be able to assess the battery charge I have connected a LED battery charge indicator circuit to a tactile switch. Pressing the switch will show the battery charge status.
+<img width="877" height="682" alt="image" src="https://github.com/user-attachments/assets/5a9742ea-d24b-45e8-a22e-38cec05614cf" />

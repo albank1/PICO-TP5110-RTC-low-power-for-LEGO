@@ -11,7 +11,7 @@ I found that when the TP5110 was connected to the PICO I was damaging it when pr
 
 This works with the TP5110 drawing only a few nA (not measurable) and the PICO and LED at about 200 mA. As is every time the TP5110 activates the LED lights up for about 1s and turns off. This wastes power and does not look good. If I put a NPN transistor in the path of the LED to GND I can stop this. I used a BC337 with 100k pulldown resistor and a 10k resistor to GPIO 11.
 
-<img width="1023" height="559" alt="image" src="https://github.com/user-attachments/assets/65638415-d02d-443e-9c56-bab5a3dce306" />
+<img width="1238" height="631" alt="image" src="https://github.com/user-attachments/assets/4c30e951-2712-495d-ae47-3cbd6e64a6c5" />
 
 I have had issues with this locking up. After a couple of days after removing the power it works again. It might be that the charging circuit on the RTC is trying to charge the CR2032 battery. I have removed the 201 resistor on the RTC (see red box)
 <img width="283" height="165" alt="image" src="https://github.com/user-attachments/assets/9db46d00-58e1-4b6c-8988-7e9ab6c5487f" />
